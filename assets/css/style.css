@@ -50,7 +50,7 @@ nav {
 	margin: 10px;
 }
 
-nav a {
+nav a{
 	position: relative;
 	color: #fff;
 	text-decoration: none;
@@ -86,34 +86,33 @@ nav a:hover {
 	margin-bottom: 20px;
 }
 
-.user_details_left_right {
-	width: 125px;
-	display: inline-block;
-	position: absolute;
-}
-
 .user_details img {
-	height: 125px;
+	height: 120px;
 	border-radius: 5px;
 	margin-right: 5px;
 }
 
+.user_details_left_right {
+	width: 120px;
+	display: inline-table;
+	position: absolute;
+}
+
 .main_column {
-	float: right;
+	float:right;
 	width: 70%;
 	z-index: -1;
-	min-height: 160px;
+	min-height: 170px;
 }
 
 .post_form {
 	width: 100%;
-
 }
 
 .post_form textarea {
-	width: 80%;
+	width: 81%;
 	height: 60px;
-	border-radius: 5px;
+	border-radius: 3px;
 	margin-right: 5px;
 	border: 1px solid #D3D3D3;
 	font-size: 12px;
@@ -139,7 +138,7 @@ textarea:focus {
 	margin: 0;
 }
 
-.post-form input[type="submit"]:active {
+.post_form input[type="submit"]:active {
 	padding: 5px 4px 4px 5px;
 }
 
@@ -148,7 +147,7 @@ textarea:focus {
 	font-size: 15px;
 	padding: 0px 5px;
 	min-height: 75px;
-	cursor: pointer;
+	cursor:pointer;
 }
 
 .post_profile_pic {
@@ -161,7 +160,7 @@ textarea:focus {
 }
 
 #comment_iframe {
-	max-height: 250px;
+	max-height: 250px;	
 	width: 100%;
 	margin-top: 5px;
 }
@@ -184,9 +183,8 @@ textarea:focus {
 	font-size: 14px;
 	margin: 3px 3px 3px 5px;
 }
-
 #comment_form input[type="submit"] {
-	border: none;
+	border:none;
 	background-color: #20AAE5;
 	color: #156588;
 	border-radius: 5px;
@@ -201,8 +199,8 @@ textarea:focus {
 .newsfeedPostOptions {
 	padding: 0px;
 	text-decoration: none;
-	color: #20AAE5;
-	border: none;
+	color:#20AAE5;
+	border:none;
 }
 
 .newsfeedPostOptions iframe {
@@ -251,7 +249,7 @@ textarea:focus {
 
 .profile_info {
 	display: list-item;
-	background-color: #2980B9;
+	background-color: #2980b9;
 	width: 100%;
 	padding: 10px 0 10px 0;
 }
@@ -264,23 +262,18 @@ textarea:focus {
 .danger {
 	background-color: #e74c3c;
 }
-
 .warning {
 	background-color: #f0ad4e;
 }
-
 .default {
 	background-color: #bdc3c7;
 }
-
 .success {
 	background-color: #2ecc71;
 }
-
 .info {
 	background-color: #3498db;
 }
-
 .deep_blue {
 	background-color: #0043f0;
 }
@@ -303,7 +296,6 @@ textarea:focus {
 	color: #fff;
 	background-color: #2ecc71;
 }
-
 #ignore_button {
 	width: 20%;
 	height: 28px;
@@ -327,12 +319,14 @@ textarea:focus {
 .profile_main_column {
 	min-width: 675px;
 	float: left;
-	width: 75%;
+	width: 70%;
 	z-index: -1;
+
 }
 
 .profile_info_bottom {
 	margin: 10 0 0 7px;
+
 }
 
 #message_textarea {
@@ -342,21 +336,18 @@ textarea:focus {
 	border: 1px solid #D3D3D3;
 	font-size: 12px;
 }
-
 #message_submit {
 	height: 41px;
 	width: 120px;
 	margin: 0;
 	position: absolute;
-	border: none;
+	border:none;
 	background-color: #20AAE5;
 	color: #156588;
 	border-radius: 5px;
-	position: absolute;
 	font-family: 'Bellota-BoldItalic', sans-serif;
 	text-shadow: #73B6E2 0.5px 0.5px 0px;
 }
-
 .message {
 	border: 1px solid #000;
 	border-radius: 5px;
@@ -371,7 +362,6 @@ textarea:focus {
 	float: right;
 	margin-bottom: 5px;
 }
-
 .message#green {
 	background-color: #2ecc71;
 	border-color: #27ae60;
@@ -379,7 +369,7 @@ textarea:focus {
 	margin-bottom: 5px;
 }
 
-.loaded_message {
+.loaded_messages {
 	height: 65%;
 	min-height: 300px;
 	max-height: 400px;
@@ -415,16 +405,13 @@ textarea:focus {
 	height: 60px;
 	border-bottom: 1px solid #D3D3D3;
 }
-
 .resultDisplay a {
 	float: none;
 }
-
 .resultDisplay:hover {
 	background-color: #EBEBEB;
 	text-decoration: none;
 }
-
 .liveSearchProfilePic img {
 	height: 50px;
 	border-radius: 25px;
@@ -437,7 +424,7 @@ textarea:focus {
 	color: #1E96CA;
 }
 
-.liveSearchText p {
+.liveSearchText p{
 	margin-left: 10px;
 	font-size: 12px;
 }
@@ -446,16 +433,16 @@ textarea:focus {
 	margin-top: 25px;
 }
 
-.dropdown_data_window  {
-	background-color: #fff;
-	border: 1px solid #DADADA;
-	border-radius:  0 0 8px 8px;
-	border-top: none;
-	width: 300px;
-	position: absolute;
-	right: 10px;
-	top: 40px;
-	overflow: scroll;
+.dropdown_data_window {
+    background-color: #fff;
+    border: 1px solid #DADADA;
+    border-radius: 0 0 8px 8px;
+    border-top: none;
+    width: 300px;
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    overflow: scroll;
 }
 
 .notification_badge {
@@ -473,3 +460,14 @@ textarea:focus {
 	left: 8px;
 	top: -5px;
 }
+
+
+
+
+
+
+
+
+
+
+

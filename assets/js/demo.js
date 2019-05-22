@@ -1,14 +1,14 @@
 $(document).ready(function() {
 
 	//Button for profile post
-	$('#submit_profile_post').click(function() {
-
+	$('#submit_profile_post').click(function(){
+		
 		$.ajax({
 			type: "POST",
 			url: "includes/handlers/ajax_submit_profile_post.php",
 			data: $('form.profile_post').serialize(),
 			success: function(msg) {
-				$('#post_form').modal('hide');
+				$("#post_form").modal('hide');
 				location.reload();
 			},
 			error: function() {
@@ -18,7 +18,9 @@ $(document).ready(function() {
 
 	});
 
+
 });
+
 
 function getUsers(value, user) {
 	$.post("includes/handlers/ajax_friend_search.php", {query:value, userLoggedIn:user}, function(data) {
@@ -49,14 +51,15 @@ function getDropdownData(user, type) {
 			success: function(response) {
 				$(".dropdown_data_window").html(response);
 				$(".dropdown_data_window").css({"padding" : "0px", "height": "280px", "border" : "1px solid #DADADA"});
-				$(".dropdown_data_type").val(type);
+				$("#dropdown_data_type").val(type);
 			}
+
 		});
 
 	}
 	else {
 		$(".dropdown_data_window").html("");
-		$(".dropdown_data_window").css({"padding" : "0px", "height": "0px",  "border" : "none"});
+		$(".dropdown_data_window").css({"padding" : "0px", "height": "0px", "border" : "none"});
 	}
 
 }
